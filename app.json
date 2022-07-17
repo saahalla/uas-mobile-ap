@@ -1,4 +1,8 @@
 {
-  "name": "reduxApp",
-  "displayName": "reduxApp"
+  "name": "expoScommerce",
+  "splash": {
+    "image": "./assets/splash.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#ffffff"
+  }
 }

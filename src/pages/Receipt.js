@@ -19,9 +19,9 @@ class Receipt extends Component {
   	let total = 0;
   	const { items } = this.props;
   	for (let i = 0; i < items.length; i++) {
-  		total = total + items[i].cost
+  		total = total + items[i].price
   	}
-  	return <Text style={styles.totText}>Total: ${(total).toFixed(2)}</Text>
+  	return <Text style={styles.totText}>Total: Rp.{(total).toFixed(2)}</Text>
   }
 
   render() {
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
 		flex: 1
 	},
 	headings: {
-		backgroundColor: '#34495e90',
+		backgroundColor: '#36a832',
 		padding: 12,
     	borderRadius: 5,
     	margin: 10,
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
 	},
 	totText: {
 		textAlign: 'center',
-		color: 'red'
+		color: 'blue'
 	}
 });
 

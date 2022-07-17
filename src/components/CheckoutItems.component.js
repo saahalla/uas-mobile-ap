@@ -27,7 +27,7 @@ class CheckoutItems extends Component {
             			keyExtractor={(item) => item.id}
             			ItemSeparatorComponent= {()=> <View style={{height:0.3, backgroundColor:'#34495e90'}}/> }
             		/>
-            		<Text style={styles.text}>Total: $ {(cartTotal).toFixed(2)}</Text>	
+            		<Text style={styles.text}>Total: Rp. {(cartTotal).toFixed(2)}</Text>	
             		</View>
             		<View style={styles.custForm}>
                   <ScrollView>

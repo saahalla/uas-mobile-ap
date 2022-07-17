@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
         margin: 8
     },
     btn: {
-        backgroundColor: '#34495e',
+        backgroundColor: '#3277a8',
         borderRadius: 3,
         padding: 12,
         flex: 1,

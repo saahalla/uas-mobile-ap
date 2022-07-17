@@ -76,13 +76,13 @@ class Products extends Component {
         }}>
 
           <Text style={{
-            color: 'red',
-            fontSize: 14,
-
+            color: 'blue',
+            fontSize: 16,
+            fontWeight: 'bold'
           }}>
             Your cart: {(cartItems).length} items</Text>
           <TouchableOpacity onPress={this.onPress}>
-            <Icon name="chevron-right" size={20} color="#900" />
+            <Icon name="shopping-cart" size={25} color="#900" />
           </TouchableOpacity>
 
 

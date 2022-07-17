@@ -18,11 +18,12 @@ class Product extends Component {
             return (
         <View style={styles.container}>
             <View style={{flexDirection:'row', justifyContent: 'space-between'}} >
-            <Image source={{uri:product.picture}} style={{borderRadius:10,width:150,height:150,resizeMode:'contain'}}/>
+            <Image source={{uri:product.picture}} style={{borderRadius:10,width:150,height:150,resizeMode:'contain', marginTop:10}}/>
             <View style={styles.productDes}>
-                <Text>{product.title}</Text>
-                <Text>Rp. {(product.cost).toFixed(2)}</Text>
-                <Text>{product.Penulis}</Text>
+                <Text style={styles.textTitle}>{product.title}</Text>
+                <Text>{product.description}</Text>
+                <Text>{'\n'}</Text>
+                <Text>Rp. {(product.price).toFixed(2)}</Text>
                 <TouchableOpacity onPress={this.addToCart} style={styles.addBtn}>
                     <Text style={styles.text}>Add to cart</Text>
                 </TouchableOpacity>
@@ -40,6 +41,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         margin: 10,
+        backgroundColor: '#e9f1f2'
     },
     productDes: {
         justifyContent: 'center',
@@ -48,14 +50,19 @@ const styles = StyleSheet.create({
         width:'60%'
     },
     addBtn: {
-        borderRadius: 30,
+        borderRadius: 15,
         margin: 10,
         backgroundColor: themes.BUTTON_COLOR
     },
     text: {
         color: '#fff',
         fontSize: 16,
-        padding: 10
+        padding: 12
+    },
+    textTitle: {
+        color: '#000',
+        fontSize: 18,
+        marginBottom: 10
     }
 });
 
